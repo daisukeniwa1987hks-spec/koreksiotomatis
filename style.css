@@ -1,0 +1,26 @@
+body { font-family: 'Inter', sans-serif; }
+.tab-btn { transition: all 0.3s; }
+.tab-btn.active { border-color: #2563eb; color: #2563eb; background-color: #eff6ff; }
+.section { display: none; }
+.section.active { display: block; }
+.card { background-color: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+.btn { padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; text-align: center; cursor: pointer; transition: all 0.2s; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;}
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+.btn-primary { background-color: #2563eb; color: white; }
+.btn-primary:hover { background-color: #1d4ed8; }
+.btn-secondary { background-color: #4b5563; color: white; }
+.btn-secondary:hover { background-color: #374151; }
+.btn-green { background-color: #16a34a; color: white; }
+.btn-green:hover { background-color: #15803d; }
+.btn-danger { background-color: #dc2626; color: white; }
+.btn-danger:hover { background-color: #b91c1c; }
+input[type="text"], input[type="number"], select { border: 1px solid #d1d5db; border-radius: 0.5rem; padding: 0.75rem; width: 100%; transition: border-color 0.2s, box-shadow 0.2s; }
+input[type="text"]:focus, input[type="number"]:focus, select:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2); }
+.modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; opacity: 0; visibility: hidden; transition: all .3s; }
+.modal-overlay.active { opacity: 1; visibility: visible; }
+.modal-content { background: white; padding: 1.5rem; border-radius: 0.5rem; width: 90%; max-width: 500px; transform: scale(0.9); transition: all .3s; display: flex; flex-direction: column; max-height: 90vh; }
+.modal-overlay.active .modal-content { transform: scale(1); }
+.sub-tab-btn { transition: all 0.2s; border-bottom: 2px solid transparent; padding: 0.5rem 1rem; }
+.sub-tab-btn.active { color: #2563eb; border-color: #2563eb; font-weight: 600; }
+.analysis-section { display: none; }
+.analysis-section.active { display: block; }
